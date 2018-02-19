@@ -1,0 +1,42 @@
+/****************************/
+/* TABLE OF CONTENTS */
+/****************************/
+/*
+ * GLOBAL STYLES
+ * HEADER STYLES
+ */
+
+/* GLOBAL STYLES */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER STYLES */
+.header {
+  background-color: #222e5a;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header__icon {
+  align-self: center;
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+
+.header__icon i {
+  color: #526e87;
+  font-size: 2em;
+}
+
+.header__title {
+  color: #526e87;
+  font-weight: 200;
+  justify-self: end;
+  align-self: center;
+  padding-right: 0.5em;
+}
+
+.header__title h1 {
+  margin: 0;
+}
