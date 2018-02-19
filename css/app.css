@@ -6,6 +6,7 @@
  * HEADER STYLES
  * SIDENAV STYLES
  * MAIN STYLES
+ * FOOTER STYLES
  */
 
 /* GLOBAL STYLES */
@@ -246,4 +247,43 @@ input::-webkit-inner-spin-button {
 
 .main_inner table {
   background-color: #1c2746;
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #1c2746;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  max-height: 40px;
+}
+
+.footer__social li {
+  height: 45px;
+  width: 45px;
+  justify-self: center;
+  align-self: center;
+}
+
+.footer__social li a i {
+  font-size: 2em;
+  color: #24d9ff;
+}
+
+.footer__desc {
+  color: #24d9ff;
+  font-size: 1.3em;
+  font-weight: 200;
+  justify-self: end;
+  align-self: center;
+  padding-right: 0.5em;
 }
