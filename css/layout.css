@@ -1,0 +1,36 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 60px calc(100vh - 120px) 60px;
+}
+
+.header {
+  grid-column: span 1;
+  background-color: grey;
+}
+
+.main {
+  grid-column: span 1;
+}
+
+.footer {
+  grid-column: span 1;
+  background-color: grey;
+}
+
+.nav {
+  position: absolute;
+  width: 400px;
+  background-color: orange;
+  left: -400px;
+  top: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.nav-open {
+  left: 0;
+}
