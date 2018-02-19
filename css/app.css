@@ -5,11 +5,31 @@
  * GLOBAL STYLES
  * HEADER STYLES
  * SIDENAV STYLES
+ * MAIN STYLES
  */
 
 /* GLOBAL STYLES */
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+table,
+tr,
+td {
+  border: 1px solid #22a5c8;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
 }
 
 .btn {
@@ -30,7 +50,8 @@ body {
 
 /* HEADER STYLES */
 .header {
-  background-color: #222e5a;
+  background-color: #1c2746;
+  box-shadow: 0 15px 35px #13203e;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -205,4 +226,24 @@ input::-webkit-inner-spin-button {
 .nav__colorpicker__controls p span {
   justify-self: end;
   color: #0078eb;
+}
+
+/* MAIN STYLES */
+.main {
+  background-color: #222d51;
+  display: grid;
+}
+
+.main__inner {
+  display: block;
+  padding: 1em;
+  align-self: center;
+  justify-self: center;
+  background-color: #1c2746;
+  box-shadow: 0 15px 35px #13203e;
+  border-radius: 5px;
+}
+
+.main_inner table {
+  background-color: #1c2746;
 }
