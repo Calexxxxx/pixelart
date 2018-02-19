@@ -1,3 +1,4 @@
+// navbar toggle
 const navToggle = document.getElementById('toggle-nav');
 const closeNav = document.getElementById('close-nav');
 const nav = document.getElementById('nav');
@@ -10,6 +11,7 @@ closeNav.addEventListener('click', function() {
   nav.classList.remove('nav-open');
 });
 
+// color picker
 const picker = document.getElementById('picker');
 const ctx = picker.getContext('2d');
 let preview = document.getElementById('preview');
@@ -25,7 +27,7 @@ let pixelColor;
 let dColor;
 let imgdata;
 let pixel;
-
+let hexValBg = '#fff';
 // load the image in the color picker canvas
 image.onload = function() {
   ctx.drawImage(image, 0, 0, image.width, image.height);
@@ -55,4 +57,45 @@ picker.addEventListener('mousemove', function(e) {
 picker.addEventListener('click', function(e) {
   hexValSelected.textContent = '#' + ('0000' + dColor.toString(16)).substr(-6);
   hexValSelected.style = `background-color: ${pixelColor};`;
+  hexValBg = '#' + ('0000' + dColor.toString(16)).substr(-6);
+});
+
+// grid functions
+let canvas = document.getElementById('canvas');
+
+const submit = document.getElementById('submit');
+const reset = document.getElementById('reset');
+
+function makeGrid(w, h) {
+  let grid = '';
+  for (let i = 0; i < h; i++) {
+    grid += '<tr>';
+    for (let j = 0; j < w; j++) {
+      grid += '<td></td>';
+    }
+    grid += '</tr>';
+  }
+  canvas.innerHTML = grid;
+}
+makeGrid(40, 30);
+
+submit.addEventListener('click', function(e) {
+  e.preventDefault();
+  let width = document.getElementById('width').value;
+  let height = document.getElementById('height').value;
+  canvas.innerHTML.remove;
+  makeGrid(width, height);
+});
+
+reset.addEventListener('click', function(e) {
+  e.preventDefault();
+  makeGrid(40, 30);
+});
+
+canvas.addEventListener('mousedown', function(e) {
+  e.target.style = `background-color: ${hexValBg}`;
+});
+
+canvas.addEventListener('dblclick', function(e) {
+  e.target.style = `background-color: #1c2746`;
 });
