@@ -9,7 +9,6 @@ body {
 
 .header {
   grid-column: span 1;
-  background-color: grey;
 }
 
 .main {
@@ -18,13 +17,11 @@ body {
 
 .footer {
   grid-column: span 1;
-  background-color: grey;
 }
 
 .nav {
   position: absolute;
   width: 400px;
-  background-color: orange;
   left: -400px;
   top: 0;
   bottom: 0;
