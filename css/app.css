@@ -49,6 +49,10 @@ td {
   background-color: #151c38;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 /* HEADER STYLES */
 .header {
   background-color: #1c2746;
