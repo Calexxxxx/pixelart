@@ -109,14 +109,22 @@ let wi = document.getElementById('width');
 let he = document.getElementById('height');
 // to store old value
 let old;
+let widthLabel = document.getElementById('width-label');
+let heightLabel = document.getElementById('height-label');
 // width input check
 wi.addEventListener('keydown', function(e) {
   old = e.target.valueAsNumber;
 });
 
 wi.addEventListener('keyup', function(e) {
+  // check for input compared to old value
   if (e.target.valueAsNumber <= 80 && e.target.valueAsNumber >= 0);
   else e.target.value = old;
+  // check if has value
+  if (e.target.value) {
+    widthLabel.style =
+      'top: -54px; font-size: 0.8em; color: #151c38; fontWeight: 600;';
+  }
 });
 
 // height input check
@@ -125,6 +133,12 @@ he.addEventListener('keydown', function(e) {
 });
 
 he.addEventListener('keyup', function(e) {
+  // check for input compared to old value
   if (e.target.valueAsNumber <= 70 && e.target.valueAsNumber >= 0);
   else e.target.value = old;
+  // check if has value
+  if (e.target.value) {
+    heightLabel.style =
+      'top: -54px; font-size: 0.8em; color: #151c38; fontWeight: 600;';
+  }
 });
