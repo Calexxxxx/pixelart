@@ -78,14 +78,27 @@ function makeGrid(w, h) {
   canvas.innerHTML = grid;
 }
 makeGrid(40, 30);
-
+const note = document.getElementById('note');
+const noteText = document.getElementById('note-text');
 // get the input values and create the new grid
 submit.addEventListener('click', function(e) {
   e.preventDefault();
   let width = document.getElementById('width').value;
   let height = document.getElementById('height').value;
-  canvas.innerHTML.remove;
-  makeGrid(width, height);
+  if (width !== '' && height != '') {
+    canvas.innerHTML.remove;
+    makeGrid(width, height);
+  } else {
+    note.classList.add('note-show');
+    setTimeout(function() {
+      noteText.classList.add('note__text-show');
+      noteText.textContent = 'Please fill in the width and height.';
+    }, 400);
+    setTimeout(function() {
+      noteText.classList.remove('note__text-show');
+      note.classList.remove('note-show');
+    }, 3000);
+  }
 });
 
 // reset the grid when clicked grid size 40 x 30
