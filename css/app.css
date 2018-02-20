@@ -345,6 +345,7 @@ input::-webkit-inner-spin-button {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 50px auto;
   position: relative;
+  max-width: 1024px;
   top: calc(100% - 91%);
   width: 75%;
   height: 78%;
@@ -431,5 +432,12 @@ input::-webkit-inner-spin-button {
   .info__icon {
     top: 66px;
     right: -3px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .info__modal__inner {
+    height: 67%;
+    top: calc(100% - 87%);
   }
 }
