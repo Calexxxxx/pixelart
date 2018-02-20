@@ -398,6 +398,37 @@ input::-webkit-inner-spin-button {
   color: #4599ab;
   list-style: none;
 }
+
+/* NOTEIFICATION STYLES */
+.note {
+  position: absolute;
+  width: 0;
+  height: 60px;
+  top: 90px;
+  right: 0;
+  background-color: #1c2746;
+  color: #4599ab;
+  z-index: 100;
+  transition: 0.4s ease-in-out;
+}
+
+.note-show {
+  width: 50%;
+  padding: 0.5em;
+  border: 2px solid #4599ab;
+}
+
+.note__text {
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+  display: none;
+}
+
+.note__text-show {
+  opacity: 1;
+  display: inline-block;
+}
+
 /* MEDIA STYLES */
 @media screen and (max-width: 414px) {
   .header__title {
