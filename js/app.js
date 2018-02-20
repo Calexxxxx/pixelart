@@ -114,7 +114,7 @@ canvas.addEventListener('mousedown', function(e) {
 
 // remove background if target is double clicked
 canvas.addEventListener('dblclick', function(e) {
-  e.target.style = `background-color: #1c2746`;
+  e.target.style = `background-color: transparent`;
 });
 
 // input validation
