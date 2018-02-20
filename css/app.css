@@ -293,3 +293,19 @@ input::-webkit-inner-spin-button {
   align-self: center;
   padding-right: 0.5em;
 }
+
+@media screen and (max-width: 414px) {
+  .header__title {
+    font-size: 0.7em;
+  }
+
+  .footer__desc {
+    font-size: 0.7em;
+  }
+
+  tr,
+  td {
+    width: 12px;
+    height: 12px;
+  }
+}
