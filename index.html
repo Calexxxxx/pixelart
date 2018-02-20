@@ -93,6 +93,71 @@
 
         <!-- start main -->
         <main class="main">
+          <div class="info">
+
+            <div class="info__icon" id="open-modal">
+              <i class="fas fa-info"></i>
+            </div>
+
+            <div class="info__modal" id="info-modal">
+              <div class="info__modal__inner">
+
+                <div class="info__modal__inner__icon" id="close-modal">
+                  <i class="far fa-window-close"></i>
+                </div>
+
+                <div class="info__modal__inner__content" id="inner-content">
+                  <h1>Pixel Art Maker Info</h1>
+
+                  <ul class="info__modal__inner__content__list">
+                    <li>Gird Settings</li>
+                    <ul class="info__modal__inner__content__list-nested">
+                      <li>
+                        <p><strong>Width</strong> - amount of columns.</p>
+                      </li>
+                      <li>
+                        <p><strong>Height</strong> - amount of rows.</p>
+                      </li>
+                      <li>
+                        <p><strong>Create Grid</strong> - this will create the grid.</p>
+                      </li>
+                      <li>
+                        <p><strong>Reset Grid</strong> - this will reset the grid to  appart basic size is W x H - 40 x 30.</p>
+                      </li>
+                    </ul>
+                  </ul>
+
+                  <ul class="info__modal__inner__content__list">
+                    <li>Color Picker</li>
+                    <ul class="info__modal__inner__content__list-nested">
+                      <li>
+                        <p><strong>Selected Color</strong> - this is the color you picked and will be used on the grid.</p>
+                      </li>
+                      <li>
+                        <p><strong>Hover Color</strong> - this is the color where the crosshair currently is positioned.</p>
+                      </li>
+                      <li>
+                        <p><strong>Pick a color</strong> - with a left mouse click you will select the color.</p>
+                      </li>
+                    </ul>
+                  </ul>
+
+                  <ul class="info__modal__inner__content__list">
+                    <li>Grid</li>
+                    <ul class="info__modal__inner__content__list-nested">
+                      <li>
+                        <p><strong>Single Click</strong> - this will color the square with the selected color.</p>
+                      </li>
+                      <li>
+                        <p><strong>Double Click</strong> - this will remove the color from the square.</p>
+                      </li>
+                    </ul>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="main__inner">
             <table id="canvas" class="canvas"></table>
           </div>
