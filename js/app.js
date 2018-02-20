@@ -142,3 +142,22 @@ he.addEventListener('keyup', function(e) {
       'top: -54px; font-size: 0.8em; color: #151c38; fontWeight: 600;';
   }
 });
+
+// info modal
+const openModal = document.getElementById('open-modal');
+const closeModal = document.getElementById('close-modal');
+const modal = document.getElementById('info-modal');
+const innerContent = document.getElementById('inner-content');
+openModal.addEventListener('click', function() {
+  modal.classList.add('info__modal-show');
+  setTimeout(function() {
+    innerContent.classList.add('info__modal__inner__content-show');
+  }, 400);
+});
+
+closeModal.addEventListener('click', function() {
+  innerContent.classList.remove('info__modal__inner__content-show');
+  setTimeout(function() {
+    modal.classList.remove('info__modal-show');
+  }, 400);
+});
