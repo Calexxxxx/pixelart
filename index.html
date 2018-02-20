@@ -30,7 +30,7 @@
 
         <!-- start notification -->
         <div class="note" id="note">
-          <h2 class="note__text" id="note-text"></h2>
+          <h2 class="note__text" id="note-text">Sample Text</h2>
         </div>
         <!-- end notification -->
 
@@ -43,7 +43,7 @@
             </div>
 
             <form class="nav__form nav__form__grid">
-              <h1 class="nav__form__title">Grid Settings</h1>
+              <h2 class="nav__form__title">Grid Settings</h2>
 
               <input type="number" id="width" min="1" max="80">
               <label for="width" id="width-label">Width</label>
@@ -56,7 +56,7 @@
             </form>
 
             <div class="nav__colorpicker">
-              <h1 class="nav__colorpicker__title">Color Picker</h1>
+              <h2 class="nav__colorpicker__title">Color Picker</h2>
 
               <div class="nav__colorpicker__wrapper">
                 <h4 class="nav__colorpicker__subtitle">Selected Color</h4>
@@ -66,7 +66,7 @@
                 <div class="nav__colorpicker__preview" id="preview"></div>
               </div>
 
-              <canvas id="picker" var="1" class="nav__colorpicker__picker" width="300" height="300"></canvas>
+              <canvas id="picker" class="nav__colorpicker__picker" width="300" height="300"></canvas>
 
               <div class="nav__colorpicker__controls">
                     <p>R - <span id="rVal">255</span></p>
@@ -102,47 +102,53 @@
 
                   <ul class="info__modal__inner__content__list">
                     <li>Gird Settings</li>
-                    <ul class="info__modal__inner__content__list-nested">
-                      <li>
-                        <p><strong>Width</strong> - amount of columns.</p>
-                      </li>
-                      <li>
-                        <p><strong>Height</strong> - amount of rows.</p>
-                      </li>
-                      <li>
-                        <p><strong>Create Grid</strong> - this will create the grid.</p>
-                      </li>
-                      <li>
-                        <p><strong>Reset Grid</strong> - this will reset the grid to  appart basic size is W x H - 40 x 30.</p>
-                      </li>
-                    </ul>
+                    <li class="info__modal__inner__content__list-nested">
+                      <ul>
+                        <li>
+                          <p><strong>Width</strong> - amount of columns.</p>
+                        </li>
+                        <li>
+                          <p><strong>Height</strong> - amount of rows.</p>
+                        </li>
+                        <li>
+                          <p><strong>Create Grid</strong> - this will create the grid.</p>
+                        </li>
+                        <li>
+                          <p><strong>Reset Grid</strong> - this will reset the grid to  appart basic size is W x H - 40 x 30.</p>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
 
                   <ul class="info__modal__inner__content__list">
                     <li>Color Picker</li>
-                    <ul class="info__modal__inner__content__list-nested">
-                      <li>
-                        <p><strong>Selected Color</strong> - this is the color you picked and will be used on the grid.</p>
-                      </li>
-                      <li>
-                        <p><strong>Hover Color</strong> - this is the color where the crosshair currently is positioned.</p>
-                      </li>
-                      <li>
-                        <p><strong>Pick a color</strong> - with a left mouse click you will select the color.</p>
-                      </li>
-                    </ul>
+                    <li class="info__modal__inner__content__list-nested">
+                      <ul>
+                        <li>
+                          <p><strong>Selected Color</strong> - this is the color you picked and will be used on the grid.</p>
+                        </li>
+                        <li>
+                          <p><strong>Hover Color</strong> - this is the color where the crosshair currently is positioned.</p>
+                        </li>
+                        <li>
+                          <p><strong>Pick a color</strong> - with a left mouse click you will select the color.</p>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
 
                   <ul class="info__modal__inner__content__list">
                     <li>Grid</li>
-                    <ul class="info__modal__inner__content__list-nested">
-                      <li>
-                        <p><strong>Single Click</strong> - this will color the square with the selected color.</p>
-                      </li>
-                      <li>
-                        <p><strong>Double Click</strong> - this will remove the color from the square.</p>
-                      </li>
-                    </ul>
+                    <li class="info__modal__inner__content__list-nested">
+                      <ul>
+                        <li>
+                          <p><strong>Single Click</strong> - this will color the square with the selected color.</p>
+                        </li>
+                        <li>
+                          <p><strong>Double Click</strong> - this will remove the color from the square.</p>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
 
                 </div>
@@ -169,7 +175,7 @@
               <a href="https://www.linkedin.com/in/pascal-meers-20b61b111/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </li>
           </ul>
-          <p class="footer__desc">Create with love by <strong>Pascal Meers<strong></p>
+          <p class="footer__desc">Create with love by <strong>Pascal Meers</strong></p>
         </footer>
         <!-- end footer -->
 
