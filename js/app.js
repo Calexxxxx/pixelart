@@ -79,6 +79,7 @@ function makeGrid(w, h) {
 }
 makeGrid(40, 30);
 
+// get the input values and create the new grid
 submit.addEventListener('click', function(e) {
   e.preventDefault();
   let width = document.getElementById('width').value;
@@ -87,15 +88,43 @@ submit.addEventListener('click', function(e) {
   makeGrid(width, height);
 });
 
+// reset the grid when clicked grid size 40 x 30
 reset.addEventListener('click', function(e) {
   e.preventDefault();
   makeGrid(40, 30);
 });
 
+// set background color to target when clicked
 canvas.addEventListener('mousedown', function(e) {
   e.target.style = `background-color: ${hexValBg}`;
 });
 
+// remove background if target is double clicked
 canvas.addEventListener('dblclick', function(e) {
   e.target.style = `background-color: #1c2746`;
+});
+
+// input validation
+let wi = document.getElementById('width');
+let he = document.getElementById('height');
+// to store old value
+let old;
+// width input check
+wi.addEventListener('keydown', function(e) {
+  old = e.target.valueAsNumber;
+});
+
+wi.addEventListener('keyup', function(e) {
+  if (e.target.valueAsNumber <= 80 && e.target.valueAsNumber >= 0);
+  else e.target.value = old;
+});
+
+// height input check
+he.addEventListener('keydown', function(e) {
+  old = e.target.valueAsNumber;
+});
+
+he.addEventListener('keyup', function(e) {
+  if (e.target.valueAsNumber <= 70 && e.target.valueAsNumber >= 0);
+  else e.target.value = old;
 });
