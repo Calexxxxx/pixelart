@@ -43,6 +43,7 @@ td {
   color: #24d9ff;
   font-size: 1em;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -141,6 +142,7 @@ td {
   color: #24d9ff;
   width: 80%;
   margin: auto;
+  cursor: text;
 }
 
 .nav__form label {
