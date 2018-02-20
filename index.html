@@ -28,6 +28,12 @@
         </header>
         <!-- end header -->
 
+        <!-- start notification -->
+        <div class="note" id="note">
+          <h2 class="note__text" id="note-text"></h2>
+        </div>
+        <!-- end notification -->
+
         <!-- start nav -->
         <nav class="nav" id="nav">
           <div class="nav__inner">
@@ -49,12 +55,6 @@
               <button type="submit" id="reset" class="btn">Reset Grid</button>
             </form>
 
-            <!-- <form class="nav__form nav__form__project">
-              <h1 class="nav__form__title">Project Settings</h1>
-
-              <button type="submit" id="save" class="btn">Save Project</button>
-            </form> -->
-
             <div class="nav__colorpicker">
               <h1 class="nav__colorpicker__title">Color Picker</h1>
 
@@ -69,22 +69,13 @@
               <canvas id="picker" var="1" class="nav__colorpicker__picker" width="300" height="300"></canvas>
 
               <div class="nav__colorpicker__controls">
-                  <div>
                     <p>R - <span id="rVal">255</span></p>
-                  </div>
-                  <div>
                     <p>G - <span id="gVal">255</span></p>
-                  </div>
-                  <div>
                     <p>B - <span id="bVal">255</span></p>
-                  </div>
-                  <div>
                     <p>RGB - rgb(<span id="rgbVal">255, 255, 255</span>);</p>
-                  </div>
-                  <div>
                     <p>HEX - <span id="hexVal">#ffffff</span>;</p>
-                  </div>
               </div>
+
             </div>
 
           </div>
@@ -155,9 +146,13 @@
                   </ul>
 
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
           <div class="main__inner">
             <table id="canvas" class="canvas"></table>
           </div>
